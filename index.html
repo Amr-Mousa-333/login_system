@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./imgs/icons8-login-64.png">
+    <title>Login System</title>
+  </head>
+  <body>
+    
+    <div class="group">
+      <div class="container shadow shadow-lg rounded rounded-2 px-5">
+
+        <h1 class="text-center py-4">
+          Smart Sign Up System
+        </h1>
+
+        <input id="signupName" oninput="validName()" class="form-control my-3" placeholder="Enter your name" type="text">
+        <input id="signupEmail" oninput="validEmail()" class="form-control my-3 " placeholder="Enter your email" type="email">
+        <input id="signupPassword" oninput="validPassword()" class="form-control my-3 " placeholder="Enter your password" type="password">
+
+        <p class="alert alert-success text-danger bg-transparent border-0 text-center d-none" id="msgFind">This Email is already registered.</p>
+        <p class="alert alert-success text-success bg-transparent border-0 text-center d-none" id="msgSuccess">Data Successfully</p>
+        <button onclick="singUpfun()" class="btn btn-outline-info w-100 mb-3">Sign Up</button>
+
+        <p class="text-white text-center pb-4 ">You have an account? <a class=" fw-bolder text-decoration-none" href="./html/login.html"> Sign in</a></p>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
